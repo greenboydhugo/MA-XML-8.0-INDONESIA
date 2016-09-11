@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Memindai...</item>
+        <item>Menyambung…</item>
+        <item>Mengautentikasi…</item>
+        <item>Mendapatkan alamat IP…</item>
+        <item>Terhubung</item>
+        <item>Ditangguhkan</item>
+        <item>Memutus sambungan...</item>
+        <item>Sambungan terputus</item>
+        <item>Gagal</item>
+        <item>Dicekal</item>
+        <item>Menghindari sambungan buruk untuk sementara</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Memindai...</item>
+        <item>Menyambung ke %1$s…</item>
+        <item>Mengautentikasi dengan %1$s…</item>
+        <item>Mendapatkan alamat IP dari %1$s…</item>
+        <item>Tersambung ke %1$s</item>
+        <item>Ditangguhkan</item>
+        <item>Diputus dari %1$s…</item>
+        <item>Sambungan terputus</item>
+        <item>Gagal</item>
+        <item>Dicekal</item>
+        <item>Menghindari sambungan buruk untuk sementara</item>
+    </string-array>
     <string-array name="status_bar_style_entries">
         <item>Gabung</item>
         <item>Pisah</item>
@@ -67,35 +95,16 @@
         <item>Tinggi</item>
         <item>Sangat tinggi</item>
     </string-array>
-    <string-array name="wifi_status">
-        <item></item>
-        <item>Memindai...</item>
-        <item>Menyambung…</item>
-        <item>Mengautentikasi…</item>
-        <item>Mendapatkan alamat IP…</item>
-        <item>Terhubung</item>
-        <item>Ditangguhkan</item>
-        <item>Memutus sambungan...</item>
-        <item>Sambungan terputus</item>
-        <item>Gagal</item>
-        <item>Dicekal</item>
-        <item>Menghindari sambungan buruk untuk sementara</item>
-    </string-array>
-    <string-array name="wifi_status_with_ssid">
-        <item></item>
-        <item>Memindai...</item>
-        <item>Menyambung ke %1$s…</item>
-        <item>Mengautentikasi dengan %1$s…</item>
-        <item>Mendapatkan alamat IP dari %1$s…</item>
-        <item>Tersambung ke %1$s</item>
-        <item>Ditangguhkan</item>
-        <item>Diputus dari %1$s…</item>
-        <item>Sambungan terputus</item>
-        <item>Gagal</item>
-        <item>Dicekal</item>
-        <item>Menghindari sambungan buruk untuk sementara</item>
-    </string-array>
     <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+        <item>SIM</item>
+        <item>AKA</item>
+        <item>"AKA'"</item>
+    </string-array>
+    <string-array name="eap_method_without_sim_auth">
         <item>PEAP</item>
         <item>TLS</item>
         <item>TTLS</item>
@@ -139,10 +148,6 @@
         <item>30 hari terakhir</item>
         <item>Setel alur penggunaan...</item>
     </string-array>
-    <string-array name="sim_card_data_range">
-        <item>4 digit terakhir</item>
-        <item>4 digit pertama</item>
-    </string-array>
     <string-array name="wifi_frequency_band_entries">
         <item>Otomatis</item>
         <item>Hanya 5 GHz</item>
@@ -165,7 +170,7 @@
         <item>GTC</item>
     </string-array>
     <string-array name="wifi_phase2_entries">
-        <item>Tak Satu Pun</item>
+        <item>Tidak ada</item>
         <item>PAP</item>
         <item>MSCHAP</item>
         <item>MSCHAPV2</item>
@@ -192,9 +197,22 @@
         <item>IPv4/IPv6</item>
     </string-array>
     <string-array name="bearer_entries">
-        <item>LTE</item>
-        <item>eHRPD</item>
         <item>Tidak ditentukan</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
     </string-array>
     <string-array name="mvno_type_entries">
         <item>Tidak ada</item>
@@ -210,7 +228,7 @@
     <string-array name="app_ops_categories">
         <item>Lokasi</item>
         <item>Pribadi</item>
-        <item>Perpesanan</item>
+        <item>Pesan</item>
         <item>Media</item>
         <item>Perangkat</item>
     </string-array>
@@ -226,7 +244,7 @@
         <item>membaca kalender</item>
         <item>ubah kalender</item>
         <item>pemindaian Wi-Fi</item>
-        <item>pemberitahuan</item>
+        <item>notifikasi</item>
         <item>pemindaian seluler</item>
         <item>telepon</item>
         <item>baca SMS</item>
@@ -240,7 +258,7 @@
         <item>tulis ICC SMS</item>
         <item>ubah setelan</item>
         <item>gambar di atas</item>
-        <item>akses pemberitahuan</item>
+        <item>akses notifikasi</item>
         <item>kamera</item>
         <item>rekam audio</item>
         <item>putar audio</item>
@@ -253,7 +271,7 @@
         <item>volume dering</item>
         <item>volume media</item>
         <item>volume alarm</item>
-        <item>volume pemberitahuan</item>
+        <item>volume notifikasi</item>
         <item>volume bluetooth</item>
         <item>tetap aktif</item>
         <item>monitor lokasi</item>
@@ -262,6 +280,9 @@
         <item>bisukan/suarakan mikrofon</item>
         <item>media proyek</item>
         <item>aktifkan VPN</item>
+        <item>tulis wallpaper</item>
+        <item>bantu struktur</item>
+        <item>bantu tangkapan layar</item>
     </string-array>
     <string-array name="app_ops_labels">
         <item>Lokasi</item>
@@ -275,7 +296,7 @@
         <item>Membaca kalender</item>
         <item>Ubah kalender</item>
         <item>Lokasi</item>
-        <item>Pemberitahuan pos</item>
+        <item>Notifikasi pos</item>
         <item>Lokasi</item>
         <item>Telepon</item>
         <item>Baca SMS/MMS</item>
@@ -289,7 +310,7 @@
         <item>Tulis SMS/MMS</item>
         <item>Ubah setelan</item>
         <item>Gambar di atas</item>
-        <item>Akses pemberitahuan</item>
+        <item>Akses notifikasi</item>
         <item>Kamera</item>
         <item>Rekam audio</item>
         <item>Putar audio</item>
@@ -302,7 +323,7 @@
         <item>Volume dering</item>
         <item>Volume media</item>
         <item>Volume alarm</item>
-        <item>Volume pemberitahuan</item>
+        <item>Volume notifikasi</item>
         <item>Volume bluetooth</item>
         <item>Tetap aktif</item>
         <item>Lokasi</item>
@@ -311,6 +332,9 @@
         <item>Bisukan/suarakan mikrofon</item>
         <item>Media proyek</item>
         <item>Aktifkan VPN</item>
+        <item>Tulis wallpaper</item>
+        <item>Bantu struktur</item>
+        <item>Bantu tangkapan layar</item>
     </string-array>
     <string-array name="long_press_timeout_selector_titles">
         <item>Singkat</item>
@@ -378,7 +402,7 @@
     </string-array>
     <string-array name="hdcp_checking_titles">
         <item>Jangan periksa</item>
-        <item>Periksa hanya konten DRM</item>
+        <item>Hanya periksa konten DRM</item>
         <item>Selalu periksa</item>
     </string-array>
     <string-array name="hdcp_checking_summaries">
@@ -415,13 +439,17 @@
     </string-array>
     <string-array name="overlay_display_devices_entries">
         <item>Tidak ada</item>
-        <item>720x480 mdpi</item>
-        <item>720x480 mdpi (aman)</item>
-        <item>1280x720 tvdpi</item>
-        <item>1280x720 tvdpi (aman)</item>
-        <item>1920x1080 xhdpi</item>
-        <item>1920x1080 xhdpi (aman)</item>
-        <item>1280x720 tvdpi dan 1920x1080 xhdpi</item>
+        <item>480p</item>
+        <item>480p (aman)</item>
+        <item>720p</item>
+        <item>720p (aman)</item>
+        <item>1080p</item>
+        <item>1080p (aman)</item>
+        <item>4K</item>
+        <item>4K (aman)</item>
+        <item>4K (ditingkatkan)</item>
+        <item>4K (ditingkatkan, aman)</item>
+        <item>720p, 1080p (layar ganda)</item>
     </string-array>
     <string-array name="enable_opengl_traces_entries">
         <item>Tidak ada</item>
@@ -474,15 +502,11 @@
         <item>Selalu izinkan</item>
     </string-array>
     <string-array name="ram_states">
-        <item>normal</item>
-        <item>menengah</item>
-        <item>rendah</item>
-        <item>kritis</item>
-    </string-array>
-    <string-array name="entries_zen_mode">
-        <item>Nonaktif</item>
-        <item>Gangguan terbatas</item>
-        <item>Tanpa gangguan</item>
+        <item>Normal</item>
+        <item>Sedang</item>
+        <item>Rendah</item>
+        <item>Kritis</item>
+        <item>\?</item>
     </string-array>
     <string-array name="proc_stats_memory_states">
         <item>Normal</item>
@@ -500,11 +524,27 @@
         <item>Layanan (berjalan)</item>
         <item>Layanan (memulai ulang)</item>
         <item>Penerima</item>
-        <item>Utama</item>
+        <item>Beranda</item>
         <item>Aktivitas terakhir</item>
         <item>Disimpan dalam cache (aktivitas)</item>
         <item>Disimpan dalam cache (klien aktivitas)</item>
         <item>Disimpan dalam cache (kosong)</item>
+    </string-array>
+    <string-array name="color_picker">
+        <item>Hijau kebiruan</item>
+        <item>Biru</item>
+        <item>Nila</item>
+        <item>Ungu</item>
+        <item>Merah Muda</item>
+        <item>Merah</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_choices">
+        <item>Wi-Fi dipilih</item>
+        <item>Seluler dipilih</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_values">
+        <item>2</item>
+        <item>1</item>
     </string-array>
     <string-array name="haptic_feedback_level_texts">
         <item>Mati</item>
@@ -554,16 +594,21 @@
         <item>Putih</item>
         <item>Violet</item>
     </string-array>
+    <string-array name="screen_key_position_action">
+        <item>Tombol Menu di kiri, tombol Kembali di kanan</item>
+        <item>Tombol Kembali di kiri, tombol Menu di kanan</item>
+    </string-array>
     <string-array name="screen_key_press_action">
         <item>Tampil apl terkini</item>
         <item>Tampil menu</item>
     </string-array>
     <string-array name="screen_key_long_press_action">
         <item>Tak ada</item>
-        <item>Tampil apl terkini</item>
+        <item>Tampilkan apl terkini</item>
         <item>Jalankan Asisten</item>
-        <item>Jalankan Google now</item>
+        <item>Jalankan aplikasi Google now</item>
         <item>Tutup apl terkini</item>
+        <item>Jalankan pencarian cepat</item>
         <item>Tampil menu</item>
     </string-array>
     <string-array name="screen_key_long_press_timeout">
@@ -571,6 +616,16 @@
         <item>1 detik</item>
         <item>1,5 detik</item>
         <item>2 detik</item>
+    </string-array>
+    <string-array name="long_press_volume_down_action">
+        <item>None</item>
+        <item>Street-snap(need to select mode in camera)</item>
+        <item>Public Transportation Shortcuts</item>
+    </string-array>
+    <string-array name="long_press_volume_down_action_value">
+        <item>none</item>
+        <item>Street-snap</item>
+        <item>public_transportation_shortcuts</item>
     </string-array>
     <string-array name="button_light_timeout_entries">
         <item>1 detik</item>
@@ -687,7 +742,7 @@ Catatan: Hanya untuk Ubuntu 8.04!"</item>
         <item>Galeri</item>
         <item>Musik</item>
         <item>Email</item>
-        <item>Video</item>
+        <item>Putar video</item>
     </string-array>
     <string-array name="network_speed_slow_summary">
         <item>Jaringan lambat karena lalu lintas terlalu padat</item>
@@ -843,6 +898,18 @@ Catatan: Hanya untuk Ubuntu 8.04!"</item>
         <item>Kunci apl</item>
         <item>Ruang kedua</item>
     </string-array>
+    <string-array name="anr_record_interval_entries">
+        <item>10 det</item>
+        <item>20 det</item>
+        <item>30 det</item>
+        <item>1 mnt</item>
+    </string-array>
+    <string-array name="anr_record_interval_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
     <string-array name="alarm_repeat_type">
         <item>Tiap hari</item>
         <item>Hari kerja</item>
@@ -853,8 +920,9 @@ Catatan: Hanya untuk Ubuntu 8.04!"</item>
         <item>Hari kerja</item>
         <item>Khusus</item>
     </string-array>
-    <string-array name="screen_key_position_action">
-        <item>Tombol Menu di kiri, tombol Kembali di kanan</item>
-        <item>Tombol Kembali di kiri, tombol Menu di kanan</item>
+    <string-array name="miracast_policies">
+        <item>Tunda lbh singkat</item>
+        <item>Standar</item>
+        <item>Kualitas lbh baik</item>
     </string-array>
 </resources>
