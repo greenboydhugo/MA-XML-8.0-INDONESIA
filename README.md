@@ -1,5 +1,5 @@
 # TRANSLATE MIUI BAHASA INDONESIA 
 
-Untuk mi4c
+Untuk mi4
 
-# Cp rendiix vanzdobz@gmail.com 
+# www.facebook.com/erwin.rizkillah
